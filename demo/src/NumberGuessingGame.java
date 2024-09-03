@@ -1,7 +1,11 @@
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.*;
+
 public class NumberGuessingGame {
     public static int yescount = 0;
-    public static void addToYesSet(Set a,Set b) {
+    public static void addToYesSet(Set a, Set b) {
         if (yescount == 0) {
             a.addAll(b);
             yescount += 1;
