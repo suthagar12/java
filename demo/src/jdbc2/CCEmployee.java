@@ -1,5 +1,4 @@
 package jdbc2;
-
 public class CCEmployee {
         public String  jobtitle;
         public  String department;
@@ -39,6 +38,8 @@ public class CCEmployee {
             this.employmentstatus=employmentstatus;
             this.salary=salary;
             this.worklocation=worklocation;
+            this.employmenteligibilityverification=employmenteligibilityverification;
+            this.backgroundcheckstatus=backgroundcheckstatus;
             this.emergencycontact=emergencycontact;
             this.skills=skills;
             this.education=education;
@@ -76,10 +77,7 @@ public class CCEmployee {
                     "\nEducation :"+education+
                     "\nCertification :"+certifications+
                     "\nPerformanceReviews :"+performancereviews;
-
-
         }
-
         public static void main(String[] args) {
             CCEmployee  a=new  CCEmployee("Engineer",
                     "CSE",
@@ -102,7 +100,5 @@ public class CCEmployee {
             System.out.println("PANNumber :"+a.getPannumber());
             System.out.println("AadharNumber :"+a.getAadhaarnumber());
             System.out.println("BankaccountDetials :"+a.getBankaccountdetails());
-
         }
-
 }
